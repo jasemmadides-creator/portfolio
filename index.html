@@ -14,7 +14,12 @@
    <title>Jasem Madidis | Portfolio</title>
    <meta name="keywords" content="UI, UX, Design, Madidis, Jasem">
    <meta name="description" content="A portfolio of Jasem Madidis. A UI/UX Designer.">
-   <meta name="author" content="">
+   <meta property="og:title" content="Jasem Madidis | UI/UX Designer">
+   <meta property="og:description"
+      content="Portfolio showcasing my projects and experience in information systems.">
+   <meta property="og:image" content="https://jasemmadides-creator.github.io/portfolio/images/preview.png">
+   <meta property="og:url" content="https://jasemmadides-creator.github.io/portfolio/">
+   <meta property="og:type" content="website">
    <!-- bootstrap css -->
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
    <!-- style css -->
@@ -316,7 +321,7 @@
                <div class="row">
                   <div class="col-md-6">
                      <div class="container text-right">
-                        <img src="images/img-1.jpeg" alt="" style="width: 70%; height: auto;">
+                        <img src="images/img-1.jpeg" alt="" style="width: 100%; height: auto;">
                      </div>
                   </div>
                   <div class="col-md-4">
@@ -348,12 +353,13 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="mail_section_1">
-                     <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                     <input type="email" class="mail_text" placeholder="Your Email" name="Your Email">
-                     <input type="number" class="mail_text" placeholder="Your Phone" name="Your Phone">
-                     <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment"
-                        name="Your Message"></textarea>
-                     <div class="send_bt"><a href="#">Send Now</a></div>
+                     <form action="https://formspree.io/f/mwlvvkwy" method="post">
+                     <input name="name" type="text" class="mail_text" placeholder="Your Name" >
+                     <input name="email" type="email" class="mail_text" placeholder="Your Email" >
+                     <input name="phone number" type="number" class="mail_text" placeholder="Your Phone Number">
+                     <textarea name="message" class="massage-bt" placeholder="Your Message" rows="5" id="comment"></textarea>
+                     <button type="submit" class="send_bt">Send Now</button>
+                     </form>
                   </div>
                </div>
             </div>
